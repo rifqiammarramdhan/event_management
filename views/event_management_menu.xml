@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="parent_event_management_id"
+        name="Event Management"
+        sequence="15"
+    />
+    <menuitem
+        id="child_event_management_id"
+        name="Register"
+        parent="event_management.parent_event_management_id"
+        action="event_management.attendace_actions_register_id"
+    />
+</odoo>
