@@ -24,7 +24,7 @@ class attendance_register(models.Model):
     def get_email_confirmation_url(self):
         return {
             'type': 'ir.actions.act_url',
-            'url': '/send_payment_confirmation/%s' % (self.id),
+            'url': '/send_email_accepted/%s' % (self.id),
             'target': 'new',
         }
 
