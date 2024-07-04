@@ -22,7 +22,7 @@
                     <button type="object" name="func_set_to_rejected" invisible="status == 'accepted'" string="Rejected" class="oe_highlight"/>
                     <button type="object" name="func_set_to_hold" invisible="status == 'accepted'" string="Hold" class="oe_highlight"/>
                     <button type="object" name="func_set_to_banned" string="Banned" class="oe_highlight"/>
-                    <button type="object" name="get_email_confirmation_url" string="Send Email Invitation" class="oe_highlight"/>
+                    <button type="object" name="get_email_confirmation_url" invisible="status == 'accepted'" string="Send Email Invitation" class="oe_highlight"/>
                 </header>
                 <sheet>
                      <group>
@@ -64,6 +64,17 @@
                     </notebook>
                 </sheet>
             </form>
+        </field>
+    </record>
+<!--    TEst -->
+     <record id="attendace_register_tree_view_test_id" model="ir.ui.view">
+        <field name="name">attendace_register_tree_view_test_id</field>
+        <field name="model">form.submission</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="phone"/>
+            </tree>
         </field>
     </record>
 </odoo>

@@ -96,3 +96,4 @@ class AttendanceRegisterController(http.Controller):
             # if os.path.exists(qr_code_file):
             #     os.remove(qr_code_file)
             #     print(f"File QR code sementara {qr_code_file} telah dihapus.")
+

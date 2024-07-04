@@ -11,4 +11,11 @@
         parent="event_management.parent_event_management_id"
         action="event_management.attendace_actions_register_id"
     />
+    <menuitem
+        id="child_event_management_test_id"
+        name="Test"
+        parent="event_management.parent_event_management_id"
+        action="event_management.attendace_actions_register_test_id"
+    />
+
 </odoo>
