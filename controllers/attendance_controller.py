@@ -91,6 +91,8 @@ class AttendanceRegisterController(http.Controller):
             if server:
                 server.quit()
 
+            return request.redirect('/')
+
             # # Delete temp file
             # qr_code_file = "temp/img/qrcode/qrcode.png"
             # if os.path.exists(qr_code_file):

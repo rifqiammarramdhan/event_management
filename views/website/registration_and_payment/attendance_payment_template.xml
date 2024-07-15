@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="attendance_registration_payment_id" name="Web Form Template">
+        <t t-call="website.layout">
+            <div class="container-sm d-flex justify-content-center my-5">
+                <div class="col-lg-6">
+                    <h2 class="text-center mb-4">Order Summary</h2>
+                    <h5 class="text-center mt-2"><t t-esc="form_submission_record.name"/></h5>
+                    <table class="table table-bordered table-striped">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Description</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><bold><t t-esc="paymentrecord.category"/> | <t t-esc="paymentrecord.duration"/></bold></td>
+                                <td><t t-esc="paymentrecord.quantity"/></td>
+                                <td>EUR <t t-esc="paymentrecord.price"/></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="text-right">Subtotal:</td>
+                                <td>EUR <t t-esc="paymentrecord.subtotal"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-right">Total:</td>
+                                <td>EUR <t t-esc="paymentrecord.total"/></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p class="text-center">EUR 1 = IDR 17714.00</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-secondary s_website_form_send o_default_snippet_text">Pay Now</a>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

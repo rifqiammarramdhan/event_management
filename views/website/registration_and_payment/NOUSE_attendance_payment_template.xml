@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="attendance_registration_payment_id" name="Web Form Template">
+        <div class="oe_structure">
+            <t t-call="website.layout">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h2>Your Address</h2>
+                            <form id="address_form" action="/submit/form" method="post">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required="required"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" required="required"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" id="phone" name="phone" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company_name">Company Name</label>
+                                    <input type="text" id="company_name" name="company_name" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="vat">VAT</label>
+                                    <input type="text" id="vat" name="vat" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="street1">Street and Number</label>
+                                    <input type="text" id="street1" name="street1" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="street2">Street 2</label>
+                                    <input type="text" id="street2" name="street2" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <input type="text" id="country" name="country" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">Zip Code</label>
+                                    <input type="text" id="zip" name="zip" class="form-control"/>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <h2>Order Summary</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Non OECD Countries 1 day pass</td>
+                                        <td>1.0</td>
+                                        <td>IDR 4,871,350.00</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2">Subtotal:</td>
+                                        <td>IDR 4,871,350.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Total:</td>
+                                        <td>IDR 4,871,350.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <p>EUR 1 = IDR 17714.00</p>
+                            <a href="#" class="btn btn-secondary">I have a promo code</a>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </template>
+</odoo>

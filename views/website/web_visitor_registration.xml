@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="visitor_registration_and_payment_template" name="Registration And Payment">
+        <t t-name="website.regrationandpayment">
+          <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+              <section class="s_parallax parallax s_parallax_is_fixed bg-black-50 o_colored_level o_half_screen_height" data-scroll-background-ratio="1" data-snippet="s_parallax" data-name="Parallax" style="background-image: none">
+                <span
+                  class="s_parallax_bg oe_img_bg o_bg_img_center"
+                  style="background-image: url('/web/image/874-8d3d21c2/blake-wisz-Xn5FbEM9564-unsplash.webp'); background-position: 50% 75%"
+                  data-mimetype="image/webp"
+                  data-original-id="873"
+                  data-original-src="/web/image/873-f64858aa/blake-wisz-Xn5FbEM9564-unsplash.jpg"
+                  data-mimetype-before-conversion="image/jpeg"
+                  data-resize-width="1920"
+                  data-quality="67"
+                  data-gl-filter="blur"
+                  ><h1 style="text-align: center"><br /></h1>
+                  <h1 style="text-align: center"><strong>Regis​tration​</strong></h1></span
+                >
+
+                <div class="oe_structure oe_empty" data-editor-message-default="true" data-editor-message="DRAG BUILDING BLOCKS HERE" />
+              </section>
+              <section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none">
+                <div class="container s_allow_columns">
+                  <h2 class="display-3-fs o_default_snippet_text" style="text-align: left"><br /></h2>
+                  <h2 class="display-3-fs o_default_snippet_text" style="text-align: left"><span style="font-size: 3.5rem">Registration</span></h2>
+                </div>
+              </section>
+            </div>
+          </t>
+        </t>
+
+    </template>
+</odoo>

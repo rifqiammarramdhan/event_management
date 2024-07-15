@@ -9,7 +9,6 @@ class attendance_register(models.Model):
         if self.status != "accepted":
             self.status = 'accepted'
 
-
     def func_set_to_rejected(self):
         if self.status != "accepted":
            self.status = "rejected"
@@ -28,9 +27,7 @@ class attendance_register(models.Model):
             'target': 'new',
         }
 
-
     name = fields.Char(string="Name", require=True)
-    attendance_register_id = fields.Many2one('attendance.register', string='Attendance Register ID')
     visit_date = fields.Date(string="Visit Date", require=True)
     visit_time = fields.Float(stirng="Visit Time", require=True)
     photo = fields.Binary("Photo", help="Select Photo here")

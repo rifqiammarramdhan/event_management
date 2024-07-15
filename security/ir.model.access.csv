@@ -1,3 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_attendance_register,access_attendance_register,model_attendance_register,,1,1,1,1
 access_form_submission,access_form_submission,model_form_submission,,1,1,1,1
+access_ticket_payment,access_ticket_payment,model_ticket_payment,,1,1,1,1
+
+

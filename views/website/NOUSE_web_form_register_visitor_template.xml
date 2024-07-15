@@ -29,7 +29,20 @@
                       </div>
                     </div>
               </div>
+<!--             Visit Date-->
+             <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="datetime">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="ojg1f0smgpal"><span class="s_website_form_label_content">Visit Date</span></label>
+                  <div class="col-sm">
+                    <div class="s_website_form_datetime input-group date">
+                      <input type="text" class="form-control datetimepicker-input s_website_form_input" name="visitDate" placeholder="" id="ojg1f0smgpal" data-fill-with="undefined" />
+                      <div class="input-group-text pe-none"><i class="fa fa-calendar" /></div>
+                    </div>
+                  </div>
+                </div>
+             </div>
 
+<!--             Button-->
               <div class="mb-0 py-2 col-12 s_website_form_submit" data-name="Submit Button">
                     <div style="width: 200px" class="s_website_form_label" />
                     <button type="submit" class="btn btn-primary s_website_form_send o_default_snippet_text">Submit</button>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="almost_template_id" name="Contact Form">
+        <t t-name="website.almost">
+          <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+              <section class="s_parallax parallax s_parallax_is_fixed bg-black-50 o_colored_level o_half_screen_height" data-scroll-background-ratio="1" data-snippet="s_parallax" data-name="Parallax" style="background-image: none">
+                <span
+                  class="s_parallax_bg oe_img_bg"
+                  style="background-image: url('/web/image/876-00ae006e/website.s_parallax_default_image'); background-position: 50% 75%"
+                  data-mimetype="image/jpeg"
+                  data-original-id="328"
+                  data-original-src="/theme_odoo_experts/static/src/img/snippets/s_parallax.jpg"
+                  data-mimetype-before-conversion="image/jpeg"
+                  data-gl-filter="aden"
+                >
+                  <h1 style="text-align: center"><br /></h1>
+                  <h1 style="text-align: center">Verify E-mail Address</h1>
+
+                  <br
+                /></span>
+              </section>
+              <section class="s_embed_code pt64 pb64 o_colored_level text-center" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none">
+                <div class="s_embed_code_embedded o_not_editable container">
+                  <div class="font-monospace pt8 o_default_snippet_text">
+                    <p>We've sent an e-mail to <b class="o_default_snippet_text"><t t-esc="almostEmail"/></b> to verify your e-mail address and activate your account.</p>
+
+                    <p style="margin-top: 5rem; margin-bottom: 5rem">Click here if you did not receive an e-mail.</p>
+
+                    <a role="button" href="/" class="btn btn-primary s_website_form_send o_default_snippet_text">Bact To Home</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </t>
+        </t>
+    </template>
+</odoo>
+

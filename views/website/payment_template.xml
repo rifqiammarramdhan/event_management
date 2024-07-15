@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="payment_template" name="Payment Page">
+        <t t-name="website.regpay">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="text-center pt64 pb64 o_colored_level">
+                        <h1>Payment</h1>
+                    </section>
+                    <div class="o_container_small">
+                        <form action="/regpay" method="post" enctype="multipart/form-data" class="o_mark_required">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <!-- Add ID-->
+                        <input type="hidden" name="form_submission_id" t-value="form_submission_id" value="form_submission_id"/>
+
+                            <div class="s_website_form_rows row s_col_no_bgcolor">
+                                <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="obij2aulqyau">
+                                            <span class="s_website_form_label_content o_default_snippet_text">Category</span>
+                                            <span class="s_website_form_mark o_default_snippet_text"> *</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <select class="form-select s_website_form_input" name="category" required="1" id="obij2aulqyau" >
+                                                <option value="premium">premium</option>
+                                                <option value="regular">regular</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="obij2aulqyau">
+                                            <span class="s_website_form_label_content o_default_snippet_text">Duration</span>
+                                            <span class="s_website_form_mark o_default_snippet_text"> *</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <select class="form-select s_website_form_input" name="duration" required="1" id="obij2aulqyau">
+                                                <option value="one_day">One Day Pass</option>
+                                                <option value="two_day">Two Day Pass</option>
+                                                <option value="three_day">Three Day Pass</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="obij2aulqyau">
+                                            <span class="s_website_form_label_content o_default_snippet_text">quantity</span>
+                                            <span class="s_website_form_mark o_default_snippet_text"> *</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input class="form-control s_website_form_input" type="number" name="quantity" required="1" id="obij2aulqyau" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-name="Field" class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="char">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="obij2aulqyau">
+                                            <span class="s_website_form_label_content o_default_snippet_text">Payment Date</span>
+                                            <span class="s_website_form_mark o_default_snippet_text"> *</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input class="form-control s_website_form_input" type="date" name="payment_date" required="1" id="obij2aulqyau" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 200px" class="s_website_form_label">
+                                    <button type="submit" class="btn btn-primary s_website_form_send o_default_snippet_text">Submit</button>
+                                    <span id="s_website_form_result"> </span>
+                                </div>
+                                <div class="col-12">
+                                    <div class="s_website_form_message"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <br />
+            </t>
+        </t>
+    </template>
+</odoo>

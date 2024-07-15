@@ -5,17 +5,23 @@
         name="Event Management"
         sequence="15"
     />
+<!--    <menuitem-->
+<!--        id="child_event_management_id"-->
+<!--        name="Register"-->
+<!--        parent="event_management.parent_event_management_id"-->
+<!--        action="event_management.attendace_actions_register_id"-->
+<!--    />-->
     <menuitem
-        id="child_event_management_id"
-        name="Register"
+        id="child_visitor_event_management_id"
+        name="Visitor"
         parent="event_management.parent_event_management_id"
-        action="event_management.attendace_actions_register_id"
+        action="event_management.visitor_actions_id"
     />
     <menuitem
-        id="child_event_management_test_id"
-        name="Test"
+        id="child_payment_event_management_id"
+        name="payment"
         parent="event_management.parent_event_management_id"
-        action="event_management.attendace_actions_register_test_id"
+        action="event_management.payment_actions_id"
     />
 
 </odoo>
