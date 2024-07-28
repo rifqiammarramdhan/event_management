@@ -23,7 +23,7 @@ class AttendanceRegisterController(http.Controller):
     )
     def sendMail(self, data=None, **args):
         email_pengirim = "rifqiammarkontak@gmail.com"
-        password = "ybwv atax yake lfgo"
+        password = "dcbt panx bake dss"
         smtp_server = "smtp.gmail.com"
         smtp_port = 587
         msg = MIMEMultipart()
